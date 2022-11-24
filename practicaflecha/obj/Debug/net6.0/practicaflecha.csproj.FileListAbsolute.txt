@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\bin\Debug\net6.0\practicaflecha.exe
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\bin\Debug\net6.0\practicaflecha.deps.json
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\bin\Debug\net6.0\practicaflecha.runtimeconfig.json
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\bin\Debug\net6.0\practicaflecha.dll
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\bin\Debug\net6.0\practicaflecha.pdb
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.AssemblyInfo.cs
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.dll
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\refint\practicaflecha.dll
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.pdb
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\practicaflecha.genruntimeconfig.cache
+C:\Users\Admin\Documents\Prácticas(Código)\practicaflecha\obj\Debug\net6.0\ref\practicaflecha.dll
