@@ -1,38 +1,5 @@
-body{
-    text-align: center;
+table, th, td{
+    border: 1px solid black;
 }
 
-p{
-    color: rgb(71, 68, 68);
-    
-    margin: 20;
-}
-h1{
-    font-size: 100px;
-}
-h2{
-    border-style: ridge;
-    border-color: rgb(87, 86, 88);
-    border-width: 5px;
-    width: fit-content;
-    
-    margin-left: auto;
-    margin-right: auto;
-}
-#square{
-    align-self: auto;
-    background-color: aqua;
-    height: 200px;
-    width: 200px;
-    color: black;
-    
-}
-.centro{
-    
-    margin-left: 250px;
-    margin-right: 250px;
-    border-width: 60px;
-}
-.foto{
-    color: blue;
-}
+

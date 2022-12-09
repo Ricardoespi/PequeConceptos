@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>About</title>
+</head>
+
+<body>
+    <!-- ol significa lista no ordenada -->
+    <table style="border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Casa en Venezuela papu</td>
+                <td>20$</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Pokedex</td>
+                <td>Gratis</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="text-align: right;">Total: </td>
+                <td>40$</td>
+                <td>501</td>
+            </tr>
+        </tfoot>
+    </table>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <ol>
+        <li value="10">Elemento 1
+            <ol>
+                <li style="list-style-type: lower-greek;">sub elemento 1</li>
+                <li style="list-style-type: lower-greek;">sub elemento 2</li>
+                <li style="list-style-type: lower-greek;">sub elemento 3</li>
+            </ol>
+        </li>
+
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+
+    <table>
+        <td>
+            <a href="Portfolio.html">Home</a>
+        </td>
+        <td>
+            <a href="">About</a>
+        </td>
+    </table>
+    <hr>
+        <h1>Sobre mí</h1>
+        <form action="/formulario" method="post">
+            <label for="subject">Subject</label>
+            <input value="Tema" name="subject" id="subject" type="text">
+            <br>
+            <label for="message">Message</label>
+            <input value="Mensaje" name="message" id="message" type="text">
+            <br>
+            <textarea rows="10" cols="40" name="comentario" id="comentario" placeholder="ingrese comentario...">Hola :D</textarea>
+            <input type="submit" value="Enviar"><br>
+        </form>
+</body>
+</html>
