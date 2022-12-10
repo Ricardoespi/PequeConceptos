@@ -1,0 +1,104 @@
+#titulo{
+    color: tomato;
+}
+p.especial{
+    color: mediumaquamarine;
+}
+/*Sigue estando la misma jerarquía que habia aprendido, pero cuando se encuentran dos estilos en el mismo nivel se define por el orden dentro del archivo CSS
+Lo último del código es lo último que se ejecuta, por ende es lo que va a quedar.*/
+p.texto{
+    color: slateblue;
+}
+/*Si pongo div p, quiero decir todos los p que se encuentren dentro de un div, sean o no hijos directos.*/ 
+div p{
+    color: mediumseagreen;
+}
+/*Puedo poner propiedades a varias etiquetas usando la , */
+div h2, div h3{
+    color: brown;
+}
+*{
+    font-size: 20px;
+    color: black;
+}
+/*
+.color{
+    #000 = Escala RGB(#000 = Red, Green, Blue) f es la mayor expresion (blanco) y 0 la menor(negro)
+    #000000 = Escala RGB avanzada(00 RED | 00 BLUE | 00 GREEN )
+    color: #FF0000;
+} 
+*/
+/* .color{
+    Esta es la propiedad que en realidad debería usar, es la que esta mas completa, generalmente es la que usan 
+    los diseñadores.
+    color: rgb(122, 0, 0);
+} */
+.color{
+    /* border: 5px mediumpurple groove; */
+    /*
+        2d ↓
+        dotted | dashed | solid | hidden | double | none
+        3D ↓
+        groove | ridge | inset | outset
+    */
+    border-style: outset;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+    /*Las mejores medidas son las relativas al tamaño de la fuente: em, y rem
+    rem es relativa al tamaño de la fuente de la etiqueta HTML, es igual para todas las etiquetas
+    em es relativo al tamaño de la fuente que tiene ese elemento en particular.*/
+}
+
+#fondo{
+    /*Otra manera de poner colores es con rbga, siendo la a el valor de la opacidad del color. 
+    Si tienes negro con opacidad de 0.35 que parece gris, no es gris, en negro transparente 
+    que muestra objetos que hay detrás.*/
+    background-color: rgba(255, 0, 0);
+    /*Opacity le da transparencia al elemento (etiqueta) completo, y no solo al color del background, si no tambien al texto etc.*/ 
+    /* opacity: 0.3; */
+    height: 400px;/*Esto es para ponerle height al background como tal, el width lo agarra dependiendo del tamaño de la pantalla si no lo asignas.*/
+    background-image: url('img/Industria.png');
+    /*background size nos permite redimensionar la imagen que nosotros tengamos de fondo.*/
+    background-size:100px 100px ;/*esto lo que cmabia es el tamaño de la imagen.
+                    auto = auto
+                    cover = cubre el ancho completo la imagen
+                    contain
+                    200px 200px = width y height del background.*/
+    background-repeat: repeat-y;
+    /*Si no quiero que se repita la imagen uso: no-repeat
+      Si quiero que se repita en el eje x: repeat-x
+      Si quiero que se repita en el eje y: repeat-y*/
+      
+      background-position: center top; 
+      /* Para cambiar la posicion en la que empieza a repetirse nuestra imagen uso background position.
+      primer valor = eje horizontal(left, right, center), 
+      segundo valor = eje vertical(top, bottom, center) 
+      tambien se le pueden dar a los valores, cm,in, px, etc.
+      dependiendo del valor que le demos entonces va posicionado en un lugar exacto.*/
+      /* background:rgba(255, 0, 0) url(img/Industria.png) repeat-y center center / 150 px 150 px
+      Si queremos usar la propiedad de background size uso el / despues de la posicion para indicar el tamaño de la imagen.*/
+    }
+    /*La propiedad de margin nos permite tener un espacio por fuera de los elementos que nosotros definamos de HTML*/
+    .margen{
+        background-color: chocolate;
+        /*Asi se organizan los margenes dentro de margin.
+         margin: top right bottom left;
+         si le pongo un solo valor lo toma para todos.
+         si le pongo dos valores, el primero lo toma para lo vertical y el segundo para lo horizontal 
+         si pongo tres valores el primero va para top, segundo para los dos horizontales y el tercero para bottom.*/
+        /*El box model de las etiquetas de HTML se compone de un margin, un border, un padding y un contenido.*/
+        margin: 20px;
+        /*El padding es el relleno que esta afuera del background, es como un margin con color.*/
+        padding: 30px 15px 5px;
+        /*El border se posiciona entre el padding y el margin*/
+        border: 1px solid black;
+        /*Height y width son las propiedades que se usan para referirse al ancho y la altura del contenido como tal.*/
+        height: 100px;
+        width: 50px;
+        /*Para modificar como se ve el texto dentro del elemento HTML.*/
+        overflow: visible;
+        /*visible viene por defecto y no importa si el texto sale del elemento, siempre lo muestra.
+          hidden esconde el texto que sale del elemento.
+          scroll nos habilita un scroll para navegar dentro del elemento para ver el texto contenido dentro de este.*/
+    }
