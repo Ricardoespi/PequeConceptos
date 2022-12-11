@@ -19,7 +19,7 @@ div h2, div h3{
 }
 *{
     font-size: 20px;
-    color: black;
+    /* color: black; */
 }
 /*
 .color{
@@ -80,7 +80,7 @@ div h2, div h3{
       Si queremos usar la propiedad de background size uso el / despues de la posicion para indicar el tamaño de la imagen.*/
     }
     /*La propiedad de margin nos permite tener un espacio por fuera de los elementos que nosotros definamos de HTML*/
-    .margen{
+.margen{
         background-color: chocolate;
         /*Asi se organizan los margenes dentro de margin.
          margin: top right bottom left;
@@ -97,8 +97,50 @@ div h2, div h3{
         height: 100px;
         width: 50px;
         /*Para modificar como se ve el texto dentro del elemento HTML.*/
-        overflow: visible;
+        overflow: hidden;
         /*visible viene por defecto y no importa si el texto sale del elemento, siempre lo muestra.
           hidden esconde el texto que sale del elemento.
           scroll nos habilita un scroll para navegar dentro del elemento para ver el texto contenido dentro de este.*/
+          outline: 1px solid mediumaquamarine ;/*Es como un border que esta fuera del border. tienes los mismos atributos.  */
     }
+.text{  
+        /*Fuentes custom:*/
+        font-family: 'Martian Mono', monospace;
+        /*Las fuentes que te traes de google fonts, tienen que estar en comillas simples.
+        Para traerte las fuentes lo unico que tienes que hacer es elegirla de google fonts, y poner la API en el HTML*/
+        text-align: center;
+         /*Nos sirve para centrar, justificar, poner a la izquierda o a la derecha nuestro texto.*/
+         text-decoration: overline;
+                        /*line through: una linea en el medio.
+                          none: nada tiene en el medio.
+                          underline: subrayado
+                          overline: linea por encima del texto
+                        */
+        /*Estos textos pueden tener una sombra con esta propiedad.*/
+        text-shadow: 2px 2px 4px blueviolet;
+        /*primera medida: cuanto se movera hacia la derecha.
+        segunda medida: cuanto se movera la sombra hacia abajo.
+        tercera medida: cantidad de blur a agregar a la sombra.*/
+    }
+
+/*PROPIEDAD LINK Y SUS ESTADOS*/
+/*LOS ESTADOS DEL LINK TIENEN QUE IR EN ESTE ORDEN EN PARTICULAR
+  a estos selectores se les puede agregar */
+a:link {/*CUANDO NO HA SIDO VISITADO*/
+    color:blueviolet;
+    text-decoration: none;
+}
+a:visited {/*CUANDO YA HA SIDO VISITADO*/
+    color:gray;
+    text-decoration: none;
+}
+a:hover {/*CUANDO EL CURSOR ESTA ARRIBA DEL LINK*/
+    color:yellow;
+}
+a:active{/*CUANDO ESTOY PINCHANDO EL LINK*/
+    color:red;
+}
+ul{
+    background-color: cyan;
+    list-style-type: none;
+}
