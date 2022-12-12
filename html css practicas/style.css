@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+}
+.header {
+    background-color: blue;
+    margin: 1em 1em;
+}
+.header .h1{
+    width: auto;
+    padding: 1.5em 1.5em;
+    background-color: #00ffff;
+    text-align: center;
+    background-image: url('img/277564752_a_photo_of___futuristic_white_museum_with_robots_and_a_lot_of_nature_in_the_distance___concept_art__highly_detailed__mystical__magic__technology__hyper_realistic.png');
+    background-size: contain;
+    background-position: center;
+    border: 1px solid black;
+}
+.header .h1 .a{
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 2px black;
+    color: whitesmoke;
+}
+
+.seccion{
+    min-height: 10em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.seccion .h2{
+    
+}
+.seccion .h3{}

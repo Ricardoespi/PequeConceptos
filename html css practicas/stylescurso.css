@@ -1,22 +1,29 @@
 #titulo{
     color: tomato;
 }
+
 p.especial{
     color: mediumaquamarine;
 }
+
 /*Sigue estando la misma jerarquía que habia aprendido, pero cuando se encuentran dos estilos en el mismo nivel se define por el orden dentro del archivo CSS
 Lo último del código es lo último que se ejecuta, por ende es lo que va a quedar.*/
+
 p.texto{
     color: slateblue;
 }
+
 /*Si pongo div p, quiero decir todos los p que se encuentren dentro de un div, sean o no hijos directos.*/ 
 div p{
     color: mediumseagreen;
 }
+
 /*Puedo poner propiedades a varias etiquetas usando la , */
+
 div h2, div h3{
     color: brown;
 }
+
 *{
     font-size: 20px;
     /* color: black; */
@@ -33,6 +40,7 @@ div h2, div h3{
     los diseñadores.
     color: rgb(122, 0, 0);
 } */
+
 .color{
     /* border: 5px mediumpurple groove; */
     /*
@@ -79,6 +87,7 @@ div h2, div h3{
       /* background:rgba(255, 0, 0) url(img/Industria.png) repeat-y center center / 150 px 150 px
       Si queremos usar la propiedad de background size uso el / despues de la posicion para indicar el tamaño de la imagen.*/
     }
+    
     /*La propiedad de margin nos permite tener un espacio por fuera de los elementos que nosotros definamos de HTML*/
 .margen{
         background-color: chocolate;
@@ -103,6 +112,7 @@ div h2, div h3{
           scroll nos habilita un scroll para navegar dentro del elemento para ver el texto contenido dentro de este.*/
           outline: 1px solid mediumaquamarine ;/*Es como un border que esta fuera del border. tienes los mismos atributos.  */
     }
+
 .text{  
         /*Fuentes custom:*/
         font-family: 'Martian Mono', monospace;
@@ -126,21 +136,124 @@ div h2, div h3{
 /*PROPIEDAD LINK Y SUS ESTADOS*/
 /*LOS ESTADOS DEL LINK TIENEN QUE IR EN ESTE ORDEN EN PARTICULAR
   a estos selectores se les puede agregar */
+
 a:link {/*CUANDO NO HA SIDO VISITADO*/
     color:blueviolet;
     text-decoration: none;
 }
+
 a:visited {/*CUANDO YA HA SIDO VISITADO*/
     color:gray;
     text-decoration: none;
 }
+
 a:hover {/*CUANDO EL CURSOR ESTA ARRIBA DEL LINK*/
     color:yellow;
 }
+
 a:active{/*CUANDO ESTOY PINCHANDO EL LINK*/
     color:red;
 }
+
 ul{
     background-color: cyan;
-    list-style-type: none;
+    list-style-type: none;/*para quitar los bullets*/
+    /* padding-left: 0; *//*La lista veiene ocn un padding left de 40 px por defecto.*/
+    /* list-style-position: inside;  *//*Pongo los bullets dentro de la caja de contenido de la lista.*/
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #eee;
+    padding: 4px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(even):hover{
+    background-color: rgb(204, 204, 204);
+}
+
+tr:hover{
+    background-color: #fcc;
+    cursor: pointer;
+}
+
+/*display: block es la propiedad por defecto de la mayoría de etiquetas*/
+span{
+    display: block;
+    /* display: none; para esconder las etiqeutas */
+    /* visibility: hidden;con esto también puedo ocultar etiquetas. */
+    background-color: red;
+    max-width: 500px;
+}
+
+/*display: inline es la propiedad por defecto de los span, anchor tags o links(a), y la etiqueta de img */
+.inline{
+    display: inline;
+}
+
+#position{
+    position: sticky;/*por defecto es static*/
+    /* relative, es una posicion relativa a donde debiese estar posicionado este elemento. 
+    relative me habilita poder posicionar mi etiqueta con las propiedades left, right, top, y bottom. */
+    /*Fixed se usa para dejar la etiqueta pegada durante todo el mvoimiento de la pagina, 
+    se usa generalmente para los menus que se quedan pegados a la izquierda o barras de navgeacion de arriba.*/
+    /*absolute hara que la etiqueta se pegue a la etiqueta padre mas cercana*/
+    /*Sticky es como fixed, pero se va con el scroll cuando estas bajando y aparece en pantalla y vuelve a su lugar si subes
+    Bastante interesante*/
+    left: 20px;
+    top: 20px;
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float:right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column{
+    margin: 0;
+    padding: 20px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;/*A la propiedad de inline normal no se le puede asignar ni height ni width.*/
+    /*INLINE BLOCK SE USA GENERALMENTE PARA MENUS DE NAVEGACION, PARA PONER UNA PROPIEDAD DE ANCHO Y QUE 
+    TODOS LOS ELEMENTOS SE VEAN IGUALES.*/
+    height: 55px;
+    background-color: red;
+}
+
+/*PARA CENTRAR UN ELEMENTO SIEMPRE HAY QUE DARLE UN ANCHO MENOR AL 100%*/
+.center{
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    /*COMO PUEDO CENTRAR EL TEXTO DENTRO DEL ELEMENTO? ↓*/
+    text-align: center;
+    /*COMO PUEDO CENTRAR VERTICALMENTE MI ELEMENTO? ↓*/
+    /*No le das un alto, y le das un padding vertical*/
+    padding: 50px 0;
 }

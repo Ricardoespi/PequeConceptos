@@ -1,5 +1,9 @@
+a{
+    text-decoration: none;
+}
+
 .header{
-    width: 100%;
+    width: 95%;
     min-height: 5em;
     background: lightcyan;
 
@@ -13,10 +17,15 @@
 .header .h1{
     background: lightslategray;
 }
-.header .h1 .a{}
+.header .h1 .a{
+
+}
 .header .nav{
     background: green;
 }
-.header .ul{}
+.header .ul{
+    list-style-type: none;
+}
 .header .li{}
-.header .li .a{}
+.header .li .a{
+}

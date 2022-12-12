@@ -1,0 +1,71 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+
+header{
+    background-color: rgba(50, 50, 80, 0.9);
+    color: white;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container{
+    /*PARA PODER CENTRAR BIEN MIS ARTICULOS, LE DOY UN ANCHO AL CONTAINER DE LOS POSTS
+     IGUAL AL DE LAS IMAGENES DE PRESENTACION DEL ARTICULO */
+    width: 400px; 
+    margin: 0 auto;
+}
+
+section article{
+    transition: all 0.4s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0;
+    cursor: pointer;
+}
+
+section article h2{
+    color: rgb(50, 50, 80);
+}
+
+section article h2, section article p{
+    margin: 1rem;
+}
+section article:hover{
+    /*COMO LE PONGO SOMBRA A UN ELEMENTO? ↓*/
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 30, 0.5);
+}
+
+footer{
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin:0;
+}
+
+footer a{
+    transition: color 0.3s linear;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+footer a:hover{
+    color: cornflowerblue;
+}
