@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo's Home</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="reset.css">
     <script src="codigo.js"></script>
 </head>
 <body>
@@ -45,8 +45,18 @@
             <div class="grid">
 
                 <article class="article">
-                    <a href="#" title="Trabajo1">
-                        <img src="#" alt="Imagen" class="img" laoding="lazy">
+                    <a class="a" href="#" title="Trabajo1">
+                        <figure class="figure">
+                            <img src="#" alt="Imagen" class="img" laoding="lazy">
+                        </figure>
+                        <h4 class="h4">Nombre del trabajo</h4>
+                    </a>
+                </article>
+                <article class="article">
+                    <a class="a" href="#" title="Trabajo1">
+                        <figure class="figure">
+                            <img src="#" alt="Imagen" class="img" laoding="lazy">
+                        </figure>
                         <h4 class="h4">Nombre del trabajo</h4>
                     </a>
                 </article>
@@ -54,13 +64,18 @@
             </div>
         </section>
 
-        <section class="seccion" id="about">
+        <section class="seccion about" id="about">
             <h2 class="h2">Sobre mí</h2>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
+            <p class="p"><sub>Lorem</sub> <strong>ipsum </strong>dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
+            <p class="p"><del>Lorem</del> <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
+            <p class="p">Lorem <mark>ipsum</mark> dolor sit amet consectetur adipisicing elit. Dolores tempora, doloremque soluta unde itaque est.</p>
 
             <ul class="rrss">
+                <li class="li">
+                    <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
+                        <svg class="svg"></svg>
+                    </a>
+                </li>
                 <li class="li">
                     <a href="#" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
                         <svg class="svg"></svg>
@@ -70,9 +85,9 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 
-        <span>Hecho con amor ❤️ Ricardo Espinoza</span>
+        <span class="span">Hecho con amor ❤️ Ricardo Espinoza</span>
 
     </footer>
 
